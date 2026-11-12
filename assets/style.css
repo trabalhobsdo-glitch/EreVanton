@@ -615,3 +615,62 @@ a[rel="sponsored"].button.checkout:active, .closing a[rel="sponsored"].button:ac
   .offer-card a[rel="sponsored"].button { grid-column: 1 / -1; margin-top: 8px; }
   .price-now { font-size: 2.2rem; }
 }
+
+/* ===== Tema azul: só os botões ficam amarelos/verdes ===== */
+:root {
+  --paper: #f5faff; --sand: #eaf3f9; --line: #c3dcec;
+  --gold: #8fd0f5; --gold-ink: #17557f;
+  --sky: #8fd0f5; --blue: #2a7fb0;
+}
+:focus-visible { outline-color: var(--blue); }
+.disclosure { background: #eaf3f9; color: #17415c; border-bottom-color: #c3dcec; }
+.masthead { border-bottom-color: var(--blue); }
+.brand-dot { color: var(--sky); }
+.brand-sub { color: #bfe3f7; }
+nav a:hover { color: var(--sky); }
+.button.outline { border-color: var(--sky); }
+.button.outline:hover { background: var(--sky); border-color: var(--sky); color: var(--deep); }
+.text-link.light { color: var(--sky); }
+.eyebrow { color: var(--sky); }
+.eyebrow.dark { color: var(--gold-ink); }
+
+/* hero azul com letras brancas */
+.hero.dark-section { color: #fff; background: radial-gradient(ellipse at 85% 10%, #1f6f9f 0%, #17445c 45%, #0d2b3e 100%); }
+.hero.dark-section .eyebrow { color: var(--sky); }
+.hero.dark-section h1, .hero.dark-section h1 em { color: #fff; }
+.hero.dark-section .hero-deck { color: #dbe9f3; }
+.hero.dark-section .hero-prose { border-top-color: #ffffff30; }
+.hero.dark-section .prose, .hero.dark-section .prose strong { color: #eef6fb; }
+.hero.dark-section .prose .inner-thought { color: #bfe3f7; }
+.hero.dark-section .prose blockquote { color: #fff; border-color: var(--sky); }
+.hero-photo img { box-shadow: 0 22px 44px #00000066; }
+
+/* seções escuras */
+.dark-section .prose h3, .dark-section h2 { color: #fff; }
+.dark-section .prose blockquote { color: #e6f3fb; border-color: var(--sky); }
+.dark-section .source-note, .dark-section .fine-print { color: #bfe3f7; }
+.product-photo figcaption { color: #dbe9f3; }
+.question::before { background-color: var(--sky); }
+
+/* seções claras */
+.sand-section { background: linear-gradient(180deg, #f2f8fc, #dcecf7); }
+.story-pair figcaption { background: #eaf3f9; }
+.ingredient-card { border-bottom-color: var(--blue); }
+.comparison-table :is(th, td) { border-bottom-color: #cfe3f1; }
+.comparison-table th { background: #bfe3f7; }
+.comparison-table td:first-child { background: #eaf3f9; }
+.packages { background: linear-gradient(180deg, #fff 0%, #eaf3f9 100%); }
+.package-count { color: var(--gold-ink); }
+.offer-card { border-color: #9db4c4; }
+#package-2 { border-color: var(--blue); background: #e6f2fa; box-shadow: 0 22px 44px #2a7fb04d; }
+.offer-card:target { outline-color: var(--blue); }
+.checkout-panel { border-color: #bcd9ec; }
+.accordion details { border-color: #c3dcec; }
+.accordion details[open] { border-color: var(--blue); box-shadow: 0 10px 24px #2a7fb02e; }
+.plus { color: var(--blue); }
+.guide-options a { border-color: #8fd0f580; }
+.guide-options a:hover { background: var(--sky); border-color: var(--sky); }
+.footer { border-top-color: var(--blue); }
+.mobile-bar { border-top-color: var(--blue); }
+.package-notice { border-color: var(--sky); }
+.package-notice button { background: var(--sky); }
