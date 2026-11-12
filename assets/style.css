@@ -674,3 +674,13 @@ nav a:hover { color: var(--sky); }
 .mobile-bar { border-top-color: var(--blue); }
 .package-notice { border-color: var(--sky); }
 .package-notice button { background: var(--sky); }
+
+/* ===== Faixa Black Friday em movimento ===== */
+.bf-ticker { overflow: hidden; white-space: nowrap; background: #000; border-bottom: 2px solid #e10600; }
+.bf-track { display: flex; width: max-content; animation: bf-scroll 30s linear infinite; }
+.bf-group { display: flex; flex: none; }
+.bf-item { padding: 10px 30px; color: #fff; font-size: .9rem; font-weight: 800; letter-spacing: .1em; }
+.bf-item i { margin-inline: .3em; color: #fff; font-style: normal; }
+.bf-item b { color: #ff3b30; font-weight: 800; }
+@keyframes bf-scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) { .bf-track { animation: none; } }
