@@ -596,3 +596,22 @@ a[rel="sponsored"].button.checkout:active, .closing a[rel="sponsored"].button:ac
   .question { padding: 18px 18px 18px 66px; }
   .question::before { left: 16px; top: 18px; }
 }
+
+/* ===== preços e botão em cada pacote ===== */
+.price-box { margin-top: 12px; }
+.price-now { color: var(--navy); font-size: clamp(2.6rem, 4.4vw, 3.4rem); font-weight: 700; line-height: 1.05; letter-spacing: -.03em; }
+.price-now small { color: var(--muted); font-size: 1rem; font-weight: 500; letter-spacing: 0; }
+.price-old { margin-top: 6px; color: #6b7c8a; font-size: .95rem; }
+.price-old s { text-decoration-color: #d62828; text-decoration-thickness: 2px; }
+.price-off { margin-left: 6px; color: #12872a; font-weight: 700; }
+.price-save { margin-top: 2px; color: #12872a; font-size: .92rem; font-weight: 600; }
+.offer-card a[rel="sponsored"].button {
+  width: 100%; margin-top: 20px;
+  background: linear-gradient(180deg, #fff55a 0%, #ffc800 100%); border: 3px solid #f2ae00; box-shadow: 0 6px 0 #c98f00, 0 14px 22px #0d2b3e40;
+}
+.offer-card a[rel="sponsored"].button:hover { background: linear-gradient(180deg, #fffa80 0%, #ffd21a 100%); }
+.offer-card a[rel="sponsored"].button:active { box-shadow: 0 2px 0 #c98f00; }
+@media (max-width: 740px) {
+  .offer-card a[rel="sponsored"].button { grid-column: 1 / -1; margin-top: 8px; }
+  .price-now { font-size: 2.2rem; }
+}
